@@ -1,0 +1,8 @@
+#  This is the executive file for windows based systems.
+*.exe
+
+# This is the executive file for mac & linux based systems.
+*.out
+
+# someties sometimes editors formatiing settings will appear under the hood. 
+*.vscode
