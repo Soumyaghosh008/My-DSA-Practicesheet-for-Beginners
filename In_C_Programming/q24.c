@@ -8,10 +8,11 @@ int check_Sorting(int arr[], int ln)
     {
         if (arr[i] < arr[i + 1] || arr[i] == arr[i + 1])
         {
-            flag = 1;
+            flag++;
         }
         else
         {
+            flag = -1;
             break;
         }
     }
@@ -41,13 +42,13 @@ int main()
     get_Element(arr, ln);
     int ans = check_Sorting(arr, ln);
 
-    if (ans == 0)
+    if (ans != -1)
     {
-        printf("Array is not Sorted in Ascending Order \n");
+        printf("Array is Sorted in Ascending Order \n");
     }
     else
     {
-        printf("Array is Sorted in Ascending Order \n");
+        printf("Array is not Sorted in Ascending Order \n");
     }
 
     return 0;
