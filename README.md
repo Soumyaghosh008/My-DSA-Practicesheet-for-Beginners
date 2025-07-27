@@ -8,4 +8,4 @@ Hey everyone, this is my privet repo where i store all of practice codes from my
 ## Excel-Sheet Link:
  - <a href = "https://riceindia-my.sharepoint.com/:x:/g/personal/soumyadeep1_ghosh_stu_adamasuniversity_ac_in/EY-4fz66I7lPv9L8qXX8Pd4B4hijSgnVAkNEWzzoQNO2eQ?e=4cNhE3"> Click Here </a>
 ## Email-ID:
- - You can find my email from my profile, Although i add it for convenience.<span> Emai: soumyadeepghosh726@gmail.com </span>
+ - You can find my email from my profile, Although i add it for convenience. Email: ``soumyadeepghosh726@gmail.com``
