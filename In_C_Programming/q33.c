@@ -8,16 +8,18 @@
 // LONG_MIN	 =>  Min of long
 // CHAR_MAX	 =>  Max of char
 
-int get_Min_Subarray_Element(int arr[], int ln, int min)
+void get_Min_Subarray_Element(int arr[], int ln)
 {
     printf("\n");
 
-    min = INT_MAX;
+    int min = INT_MAX;
 
     for (int i = 0; i < ln; i++)
     {
         for (int j = i + 1; j < ln; j++)
         {
+            min = INT_MAX;
+
             for (int k = i; k <= j; k++)
             {
                 if (arr[k] < min)
@@ -25,22 +27,24 @@ int get_Min_Subarray_Element(int arr[], int ln, int min)
                     min = arr[k];
                 }
             }
+
+            printf("The Minimum Subarray Element is: %d\n", min);
         }
     }
-
-    return min;
 }
 
-int get_Max_Subarray_Element(int arr[], int ln, int max)
+void get_Max_Subarray_Element(int arr[], int ln)
 {
     printf("\n");
 
-    max = INT_MIN;
+    int max = INT_MIN;
 
     for (int i = 0; i < ln; i++)
     {
         for (int j = i + 1; j < ln; j++)
         {
+            max = INT_MIN;
+
             for (int k = i; k <= j; k++)
             {
                 if (arr[k] > max)
@@ -48,10 +52,10 @@ int get_Max_Subarray_Element(int arr[], int ln, int max)
                     max = arr[k];
                 }
             }
+
+            printf("The MAximum Subarray Element is: %d\n", max);
         }
     }
-
-    return max;
 }
 
 void get_Element(int arr[], int ln)
@@ -71,15 +75,11 @@ int main()
     scanf("%d", &ln);
 
     int arr[ln];
-    int min = 0, max = 0;
 
     get_Element(arr, ln);
 
-    int ans1 = get_Min_Subarray_Element(arr, ln, min);
-    int ans2 = get_Max_Subarray_Element(arr, ln, max);
-
-    printf("The Minimum element is: %d\n", min);
-    printf("The Maximum element is: %d\n", max);
+    get_Min_Subarray_Element(arr, ln);
+    get_Max_Subarray_Element(arr, ln);
 
     return 0;
 }
